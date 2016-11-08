@@ -65,7 +65,7 @@ keep_files: [assets, files]
 
 # iolo's custom
 author: kymr@naver.com
-image: '/files/covers/kymr.png'
+image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 facebook:
   app_id: '100001739084793'
