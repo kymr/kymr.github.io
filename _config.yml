@@ -13,24 +13,66 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Welcome to kymr's blog!
+title: kymr tech blog
 email: kymr@naver.com
-description: Motivations for new technologies and new world!! 
+description: Motivation to growth & technologies !!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kymr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username:
-github_username:  kymr
 
-# Build settings
-highlighter: rouge
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
-theme: minima
+repository: kakao/kakao.github.io
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  highlighter: rouge
+
 gems:
-  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
 
 encoding: utf-8
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+keep_files: [assets, files]
+
+# iolo's custom
+author: kymr@naver.com
+image: '/files/covers/kymr.png'
+asset_url: /assets
+facebook:
+  app_id: '100001739084793'
+  username: Yongmaroo Kim
+twitter:
+  username: yongmaroo
+google_plus:
+  username: yongmaroo kim
+github:
+  username: kymr
