@@ -19,9 +19,11 @@ description: Motivation to growth & technologies !!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kymr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-repository: kakao/kakao.github.io
+repository: kymr/kymr.github.io
 
 permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
 
 markdown: kramdown
 kramdown:
@@ -60,6 +62,8 @@ defaults:
       type: tags
     values:
       layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
 
 keep_files: [assets, files]
 
