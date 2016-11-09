@@ -20,6 +20,7 @@ You can watch the [video at youtube](https://www.youtube.com/watch?v=WFoUUrlZrN8
 ### Hadoop journey
 
 ![10 years of apache hadoop and beyond](/files/hadoop-summit/keynote/hadoop_journey.png)
+
 - 2006 : HDFS, MapReduce
   - parallel computing
   - tera-bytes scale of data
@@ -31,6 +32,7 @@ You can watch the [video at youtube](https://www.youtube.com/watch?v=WFoUUrlZrN8
 ### Hive (SQL & Hadoop)
 
 ![6 years of hive and beyond](/files/hadoop-summit/keynote/hive_journey.png)
+
 - 2010 : Apache Hive becomes a Top-Level Project
 - 2012 : ODBC, JDBC, batch to interactive
 - 2013 : TEZ, performance, MapReduce implementation to native
@@ -41,6 +43,7 @@ You can watch the [video at youtube](https://www.youtube.com/watch?v=WFoUUrlZrN8
 #### Hive 2 With LLAP
 
 ![Hive 2 With LLAP](/files/hadoop-summit/keynote/hive2_with_LLAP.png)
+
 1. Performance improvement
   - daemon for executing threads
   - process creation to thread creation
@@ -77,6 +80,7 @@ Cloud can saves your money and time. You only pay for what you use. And Cloud is
 ##### Enhance Performance via Caching
 
 ![Enhance Performance via Caching](/files/hadoop-summit/keynote/enhance_performance_via_caching.png)
+
 - For tabular data, LLAP
 - For non-tabular data, HDFS can be used
 
@@ -87,6 +91,7 @@ Cloud can saves your money and time. You only pay for what you use. And Cloud is
 #### Shared Data requires Shared Metadata, Security and Governance
 
 ![Shared Metadata Across All Workloads](/files/hadoop-summit/keynote/shared_data.png)
+
 - In the Cloud world, each ephemeral cluster cannot have its own copy of prior metadata.
 - It need to be stored centrally on the cloud database, and it need to be accessible to all the clusters.
 - Security and Governance metadata also need to be centrally stored and access. Therefore Apache Ranger & Atlas is proposed for that functionality.
@@ -94,6 +99,7 @@ Cloud can saves your money and time. You only pay for what you use. And Cloud is
 #### Elastic Resource Management in Context of Workloads
 
 ![Elastic Resource Management in Context of Workloads](/files/hadoop-summit/keynote/elastic_resource_management.png)
+
 - Resource is elastic!
 - Previously yarn focus on cluster management.
 - Yarn scheduler needs to manage resources in the context of workloads, and meeting the SLAs.
