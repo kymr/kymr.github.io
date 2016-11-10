@@ -7,7 +7,7 @@ tags: [hadoop,bigdata]
 ---
 ## Overview
 
-Actually, i attended [hadoop summit 2016 - tokyo](http://hadoopsummit.org/tokyo/) at last month. So i am going to review some of the talks that i heard. Also you can download slides and watch the videos from youtube.
+- Actually, i attended [hadoop summit 2016 - tokyo](http://hadoopsummit.org/tokyo/) at last month. So i am going to review some of the talks that i heard. Also you can download slides and watch the videos from youtube.
 - [slides](http://hadoopsummit.org/tokyo/agenda/)
 - [youtube](https://www.youtube.com/channel/UCAPa-K_rhylDZAUHVxqqsRA)
   - Unfortunately, just keynote videos were uploaded now. But i think each session's video will be uploaded soon.
@@ -22,13 +22,13 @@ Also he already introduced DALI before at another hadoop summit. I have curious 
 ### Motivation of DALI
 
 - Hadoop at LinkedIn
-  - > 10 clusters
-  - > 10,000 nodes
-  - > 1,000 users
+  - 10 clusters
+  - 10,000 nodes
+  - 1,000 users
 - Scaling Hardware Infrastructure is hard.
 - Scaling Human Infrastructure is harder.
 
-![Motivations of DALI](../files/hadoop-summit/dali/motivation_dali.png)
+![Motivations of DALI](/files/hadoop-summit/dali/motivation_dali.png)
 
 - Data Consumers
   - What data is available, and who produces it?
@@ -44,7 +44,7 @@ Also he already introduced DALI before at another hadoop summit. I have curious 
   - Lots of redundant code paths to support.
 - Separating logical and physical concerns is the key.
 
-![DALI Vision and Mission](../files/hadoop-summit/dali/dali_vision.png)
+![DALI Vision and Mission](/files/hadoop-summit/dali/dali_vision.png)
 
 
 ### Dataset API
@@ -73,7 +73,7 @@ Also he already introduced DALI before at another hadoop summit. I have curious 
 
 ### DALI View
   
-![DALI View](../files/hadoop-summit/dali/dali_view.png)
+![DALI View](/files/hadoop-summit/dali/dali_view.png)
 	
 - Most traditional database's view is materialized.
 - Hive view is virtual. When you select from view, behind the scene hive is rewriting view queries.
@@ -108,7 +108,7 @@ Also he already introduced DALI before at another hadoop summit. I have curious 
 
 ### DALI Implementation Details
 
-![DALI Implementation Details](../files/hadoop-summit/dali/dali_implementation.png)
+![DALI Implementation Details](/files/hadoop-summit/dali/dali_implementation.png)
 	
 ### Why DALI?
 
@@ -122,12 +122,3 @@ Also he already introduced DALI before at another hadoop summit. I have curious 
 - Infra Providers
   - Freedom to optimize
   - Flow portability -> DR, multi-DC scheduling
-  
-
-	
-	
-	
-	
-	
-	
-	
