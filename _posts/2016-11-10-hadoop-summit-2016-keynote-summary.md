@@ -7,7 +7,7 @@ tags: [hadoop,bigdata]
 ---
 ## Overview
 
-Actually, i attended [hadoop summit 2016 - tokyo](http://hadoopsummit.org/tokyo/) at last month. So i am going to review some of the talks that i heard. Also you can download slides and watch the videos from youtube.
+- Actually, i attended [hadoop summit 2016 - tokyo](http://hadoopsummit.org/tokyo/) at last month. So i am going to review some of the talks that i heard. Also you can download slides and watch the videos from youtube.
 - [slides](http://hadoopsummit.org/tokyo/agenda/)
 - [youtube](https://www.youtube.com/channel/UCAPa-K_rhylDZAUHVxqqsRA)
   - Unfortunately, just keynote videos were uploaded now. But i think each session's video will be uploaded soon.
