@@ -116,17 +116,17 @@ Atlas is a scalable and extensible set of core foundational governance services 
 
 #### Lineage
 
-[!Lineage at Apache Atlas](/files/hadoop-summit/security/lineage_atlas.png)
+![Lineage at Apache Atlas](/files/hadoop-summit/security/lineage_atlas.png)
 
 - Allowing users to drill-down into operational, security, and provenance related infomation
 
 #### Classification
 
-[!Classification at Apache Atlas](/files/hadoop-summit/security/classification_atlas.png)
+![Classification at Apache Atlas](/files/hadoop-summit/security/classification_atlas.png)
 
 - Import or define taxonomy business-oriented annotations for data.
 - Define, annotate, and automate capture of relationships between data sets and underlying elements including source, target, and derivation processes.
 
 #### Architecture
 
-[!Apache Atlas Architecture](/files/hadoop-summit/security/atlas_architecture.png)
+![Apache Atlas Architecture](/files/hadoop-summit/security/atlas_architecture.png)
