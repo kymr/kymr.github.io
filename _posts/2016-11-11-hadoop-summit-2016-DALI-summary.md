@@ -2,7 +2,7 @@
 layout: post
 title: '[review] hadoop summit 2016 tokyo - DALI'
 author: yongmaroo.kim
-date: 2016-11-10 00:30
+date: 2016-11-11 03:30
 tags: [hadoop,bigdata]
 ---
 ## Overview
