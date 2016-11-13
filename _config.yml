@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: kymr tech blog
 email: kymr@naver.com
-description: Motivation to growth & technologies !!
+description: Journey to Dream
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kymr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
