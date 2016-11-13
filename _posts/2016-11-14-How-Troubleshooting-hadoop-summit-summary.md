@@ -203,8 +203,8 @@ Almost all DataNodes failed to send full block report and retrying with a few mi
 | running jobs | curl -s "${RM}:8088/ws/v1/cluster/apps?state=RUNNING" |
 | accepted jobs | curl -s "${RM}:8088/ws/v1/cluster/apps?state=ACCEPTED" |
 | ResourceManager status | curl -s "${RM}:8088/ws/v1/cluster/info” |
-| YARN cluster | curl -s "${RM}:8088/ws/v1/cluster/metrics" | jq "." |
-| NodeManager | curl -s "${RM}:8088/ws/v1/cluster/nodes" | jq "." |
+| YARN cluster | curl -s "${RM}:8088/ws/v1/cluster/metrics" '\|' jq "." |
+| NodeManager | curl -s "${RM}:8088/ws/v1/cluster/nodes" '\|' jq "." |
 
 
 
