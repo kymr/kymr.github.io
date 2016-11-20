@@ -2,7 +2,7 @@
 layout: post
 title: 'Hadoop Troubleshooting. (Hadoop Summit 2016 summary)'
 author: yongmaroo.kim
-date: 2016-11-13 05:30
+date: 2016-11-14 05:30
 tags: [hadoop,bigdata]
 ---
 ## Overview
