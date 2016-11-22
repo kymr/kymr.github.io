@@ -105,7 +105,7 @@ class AssertionsDemo {
         assertEquals("a message", exception.getMessage());
     }
 }
-`
+```
 
 #### Assumptions
 
