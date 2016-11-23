@@ -6,12 +6,12 @@ date: 2016-11-24 01:46
 tags: [java,generics]
 ---
 
+#### Generics
+
+This is based on Toby Lee's LiveCoding tv. https://www.youtube.com/watch?v=PQ58n0hk7DI
+
+
 ```java
-public class Generics {
-	/*
-	 This is based on Toby Lee's LiveCoding tv.
-	  https://www.youtube.com/watch?v=PQ58n0hk7DI
-	  */
 
 	static <T> void method1(List<T> list) {
 
@@ -26,8 +26,11 @@ public class Generics {
 		list.clear();
 		Iterator<?> it = list.iterator();
 	}
+```
 
-	// why use, when to use
+when we use generic methods with T, then we have intention to use type T, at below case, we just need to use List's methods, so, ? is more suitable than T
+
+```java
 	static <T> boolean isEmptyT(List<T> list) {
 		return list.size() == 0;
 	}
@@ -35,12 +38,13 @@ public class Generics {
 	static boolean isEmptyW(List<?> list) {
 		return list.size() == 0;
 	}
+```
 
-	/*
-	 when we use generic methods with T, then we have intention to use type T,
-	 at above case, we just need to use List's methods, so, ? is more suitable than T
-	  */
+Also ? is more suitable than T.
+ - T : I gonna use the T inside method
+ - ? : Every type is fine. I'm not interest in that parameter
 
+```java
 	static <T> long frequencyT(List<T> list, T elem) {
 		return list.stream().filter(s -> s.equals(elem)).count();
 	}
@@ -48,13 +52,9 @@ public class Generics {
 	static long frequencyW(List<?> list, Object elem) {
 		return list.stream().filter(s -> s.equals(elem)).count();		// java infer the type ? from Object
 	}
-
-	/*
-	 Also ? is more suitable than T
-	 T : I gonna use the T inside method
-	 ? : Every type is fine. I'm not interest in that parameter
-	  */
-
+```
+	
+```java
 	private static <T extends Comparable<T>> T maxT(List<T> list) {
 		return list.stream().reduce((a, b) -> a.compareTo(b) > 0 ? a : b).get();
 	}
@@ -64,20 +64,28 @@ public class Generics {
 		return null;
 	}
 
-	/*
-	Comparable<? super T> - lowerbound : This will be used at outside. So any of T's super class fine to assign.
-	List<? extends T> upperbound : I have intention to use type T inside method. Inside the method, at least i can use T's method
-	 */
-
 	public static void example() {
 		List<Integer> list = Arrays.asList(1,2,3,4,5);
 		Collections.max(list, (a, b) -> a - b);
-		Collections.max(list, (Comparator<Object>) (a, b) -> a.toString().compareTo(b.toString()));
-
-		// Also, Watch the Collections
-		// public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll)
+		Collections.max(list, (Comparator<Object>) (a, b) -> a.toString().compareTo(b.toString()));	
 	}
+```
 
+Comparable<? super T> - lowerbound : This will be used at outside. So any of T's super class fine to assign.
+List<? extends T> upperbound : I have intention to use type T inside method. Inside the method, at least i can use T's method
+
+Also, Watch the Collections
+
+```java
+	public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll) {
+		...
+	}	
+```	
+
+
+Capture. From the outside, it looks like reverseWithHelper method will use and interest only the list not the what the type is. So this is better design in the Java.
+	
+```java
 	static <T> void reverseT(List<T> list) {
 		List<T> temp = new ArrayList<>(list);
 
@@ -92,8 +100,7 @@ public class Generics {
 			// list.set(i, temp.get(list.size() - i - 1));		// capture needed
 		}
 	}
-
-	// From the outside, this method will use and interest only the list not the what the type is. So this is better design in the Java.
+	
 	static void reverseWithHelper(List<?> list) {
 		// example with helper
 		reverseHelper(list);
@@ -111,10 +118,6 @@ public class Generics {
 		for (int i = 0; i < list.size(); i++) {
 			list.set(i, temp.get(list.size() - i - 1));
 		}
-	}
-
-	public static void main(String[] args) {
-
 	}
 }
 ```

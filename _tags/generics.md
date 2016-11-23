@@ -1,0 +1,4 @@
+---
+name: generics
+title: 'generics'
+---
