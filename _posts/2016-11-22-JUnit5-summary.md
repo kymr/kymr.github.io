@@ -2,7 +2,7 @@
 layout: post
 title: 'JUnit5 Summary'
 author: yongmaroo.kim
-date: 2016-11-20 03:00
+date: 2016-11-22 23:45
 tags: [junit,test,java]
 ---
 
