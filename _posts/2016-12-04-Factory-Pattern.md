@@ -19,7 +19,7 @@ The factory method pattern is a creational pattern that uses factory methods to 
 
 The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes.
 
-![Abstract Factory Pattern Class Diagram](/files/design-pattern/factory-pattern/abstract-factory.jpg)
+![Abstract Factory Pattern Class Diagram](/files/design-pattern/factory-pattern/abstract-factory.png)
 ![Abstract Factory Example](/files/design-pattern/factory-pattern/abstract-factory-example.png)
 
 
