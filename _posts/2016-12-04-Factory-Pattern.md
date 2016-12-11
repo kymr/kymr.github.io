@@ -2,7 +2,7 @@
 layout: post
 title: 'Factory Pattern'
 author: yongmaroo.kim
-date: 2016-11-27 23:55
+date: 2016-12-04 23:55
 tags: [design pattern,java]
 ---
 
