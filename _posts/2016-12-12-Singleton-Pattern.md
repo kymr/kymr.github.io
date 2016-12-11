@@ -12,7 +12,7 @@ tags: [design pattern,java]
 
 The singleton pattern is a design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. The term comes from the mathematical concept of a singleton.
 
-![Singleton Pattern Class Diagram](/files/design-pattern/singleton-pattern/singleton-pattern.jpg)
+![Singleton Pattern Class Diagram](/files/design-pattern/singleton-pattern/singleton-pattern.png)
 
 
 ### Implementation
@@ -84,6 +84,7 @@ public class DoubleCheckingLockingSingleton {
 The Java volatile keyword is used to mark a Java variable as "being stored in main memory". More precisely that means, that every read of a volatile variable will be read from the computer's main memory, and not from the CPU cache, and that every write to a volatile variable will be written to main memory, and not just to the CPU cache.
 Actually, since Java 5 the volatile keyword guarantees more than just that volatile variables are written to and read from main memory. 
 Since Java 5 the volatile keyword guarantees also
+  
   - If Thread A writes to a volatile variable and Thread B subsequently reads the same volatile variable, then all variables visible to Thread A before writing the volatile variable, will also be visible to Thread B after it has read the volatile variable. 
   - The reading and writing instructions of volatile variables cannot be reordered by the JVM (the JVM may reorder instructions for performance reasons as long as the JVM detects no change in program behaviour from the reordering). Instructions before and after can be reordered, but the volatile read or write cannot be mixed with these instructions. Whatever instructions follow a read or write of a volatile variable are guaranteed to happen after the read or write.
 
