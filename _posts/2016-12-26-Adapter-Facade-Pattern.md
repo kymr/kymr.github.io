@@ -12,7 +12,7 @@ tags: [design pattern,java]
 
 The adapter pattern is a software design pattern (also known as Wrapper, an alternative naming shared with the Decorator pattern) that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
 
-![Adapter Pattern Class Diagram](/files/design-pattern/adapter-pattern/adapter-pattern.png)
+![Adapter Pattern Class Diagram](/files/design-pattern/adapter-pattern/adapter_pattern.png)
 
 Both Adapter pattern and Decorator pattern is usually called as Wrapper. But the purpose is basically different. At decorator pattern, we usually add additional function to original interface. At Adapter pattern, It is convert the interface to existing one.
 
